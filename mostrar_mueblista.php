@@ -72,13 +72,15 @@
               </div>
               <div class="col-xs-12 col-md-6">
         <form method="post" action="maderas.php">
+        <div><img width="127" height="127" class="center-block img-circle" src="paginas/logo-home.png"></div>
         <?php
             if(isset($_POST['consulta'])){
             $id_sticker=$_POST['txtCodigo'];
         
             if (($id_sticker == "")){
                 }else{
-                    $resultado = listar_madera_sticker($id_sticker);
+                    $resultado =
+                    listar_madera_sticker($id_sticker);
                 }
             }
        ?>

@@ -359,7 +359,7 @@ function apellido_usuario($correo){
             echo '
             <meta charset="UTF-8">
             <ul class="list-group text-center">
-                  <li class="list-group-item">Nombre: '.$row[1].'</li>
+                  <li list-group-item">Nombre: '.$row[1].'</li>
                   <li class="list-group-item">Empresa: '.$row[2].'</li>
                   <li class="list-group-item">Uso: '.$row[3].' </li>
                   <li class="list-group-item">Descripcion: '.$row[4].' </li>
@@ -376,7 +376,7 @@ function listar_muebles_mueblista($rut_mueblista){
      $result=mysql_query($SQL);
         while($row=mysql_fetch_array($result)){
             echo '
-            <div class="elemento">
+            <div class=" elemento ">
             <img width="220px;" alt="" src="paginas/Imagenes/..'.$row[3].'" />
                   <p>Usuario: '.$row[0].' <p/>
                   <p>Tipo:    '.$row[1].' </p>
@@ -544,7 +544,7 @@ function modificar_pass_usuario($correo,$contrasena){
       $SQL="SELECT id_mueble,tipo,calificacion,foto FROM mueble WHERE correo='".$correo."'";
       $result=mysql_query($SQL);
       while($row =mysql_fetch_array($result)){
-    echo '<div class="col-md-4 espacio">
+    echo '<div class="col-md-4 col-sm-6 col-xs-12 espacio" style="margin-bottom:10px;">
             <div class="col-sm-12 col-md-12">
               <img class="img-responsive img-rounded" src="paginas/Imagenes/..'.$row[3].'" />
             </div>
