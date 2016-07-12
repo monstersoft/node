@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*HEADER BARRA-----------------------*/
+.logo {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-decoration: none;
+    text-align: center;
+}
+.logo:hover {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.logo-dec
+{
+    color: #be9e21;
+}
+
+.fondo {
+    background: rgb(61,68,83);
+    height: 60px;
+}
+/*HEADER BARRA-----------------------*/
+
+/*BODY FONDO---------------------------*/
+.colorFondo {
+    background: #f2f2f2;
+}
+/*BODY FONDO---------------------------*/
+
+/*CONTENIDO ACTION BOTONES--------------*/
+.formulario img {
+    margin-bottom: 20px;
+}
+/*leer qr webcam-------*/
+.consultaqr{
+    text-align: center;
+    margin: 0px auto;
+}
+
+    #qr-canvas{
+        display:none;
+    }
+
+    #outdiv{
+        padding-top: 0px;
+    }
+
+    #v{
+        width: 100%;
+        border: 2px solid white;
+        border-radius: 10px;
+        max-width: 500px;
+    }
+/*leer qr webcam-------*/
+.codigo {
+    margin-top: 50px;
+}
+.contenido {
+    border: 1px solid white;
+    overflow: hidden;
+}
+.a {
+    float: left;
+    margin: 7px 0px 0px 20px;
+}
+.formulario {
+    padding: 20px;
+}
+.formulario input {
+    margin-bottom: 20px;
+    border: 2px solid rgb(61,68,83);;
+}
+.formulario select {
+    margin-bottom: 20px;
+}
+
+.formulario label {
+    color: grey;
+    font-family: 'Raleway', sans-serif;
+}
+.formulario a {
+    text-decoration: none;
+    text-align: center;
+}
+.formulario a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+
+.botonesSubmit { 
+    background: rgb(61,68,83);
+    color: #f2f2f2;
+    border: none;
+    padding: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+.botonesSubmit:hover {
+    font-size: 16px;
+}
+/*CONTENIDO ACTION BOTONES--------------*/
+.fotoPerfil img {
+   margin: 0 auto;
+}
+.loquito {
+    text-align: center;
+}
+/*BARRA LATERAL-------------------------*/
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background: rgb(61,68,83);
+    font-family: 'Raleway', sans-serif;
+    color: #F2F2F2;
+    font-size: 15px;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    background: rgb(190,158,33);;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+/*BARRA LATERAL-------------------------*/
+@media(min-width:768px) {
+    .formulario {
+        padding: 100px;
+            }
+    
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+
+.contenido {
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 1px solid white;
+    overflow: hidden;
+}
+
+}
