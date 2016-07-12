@@ -1,6 +1,5 @@
 <?php
-  require_once 'head.php';
-  include "funciones.php";  
+  require_once 'head.php'; 
 ?>
 <form class="formulario" action="<?php echo $pagina == 'agregar_sticker_mueblista' ?>" method="post">
     <?php

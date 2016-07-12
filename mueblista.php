@@ -36,6 +36,13 @@
                 <li class="fotoPerfil">
                    <?php mostrar_foto_mueblista($namex) ?>
                 </li>
+                 <br>
+                  <li class="<?php echo $pagina == 'mis_datos_mueblista' ? 'active' : ''; ?>"><img class="a" src="imgIndex/userDatos.png"><a href="?p=mis_datos_mueblista">Mis datos</a></li>
+
+                    <li class="<?php echo $pagina == 'cambiar_clave_mueblista' ? 'active' : ''; ?>"><img class="a" src="imgIndex/key.png"><a href="?p=cambiar_clave_mueblista">Modificar contraseña</a></li>
+
+                    <li class="<?php echo $pagina == 'eliminar_cta_mueblista' ? 'active' : ''; ?>"><img class="a" src="imgIndex/quitar.png"><a href="?p=eliminar_cta_mueblista">Eliminar mi cuenta</a></li>
+                   <br>
                     <li class="<?php echo $pagina == 'agregar_sticker_mueblista' ? 'active' : ''; ?>"><img class="a" src="imgIndex/qr-codeblanco.png"><a href="?p=agregar_sticker_mueblista">Generar QR</a></li>
 
                     <li class="<?php echo $pagina == 'leer_qr' ? 'active' : ''; ?>"><img class="a" src="imgIndex/lupa.png"><a href="?p=leer_qr">Consultar QR</a></li> 
@@ -44,11 +51,7 @@
 
                     <li class="<?php echo $pagina == 'ranking' ? 'active' : ''; ?>"><img class="a" src="imgIndex/ranking.png"><a href="?p=ranking">Ranking</a></li>
 
-                    <li class="<?php echo $pagina == 'mis_datos_mueblista' ? 'active' : ''; ?>"><img class="a" src="imgIndex/userDatos.png"><a href="?p=mis_datos_mueblista">Mis datos</a></li>
-
-                    <li class="<?php echo $pagina == 'cambiar_clave_mueblista' ? 'active' : ''; ?>"><img class="a" src="imgIndex/key.png"><a href="?p=cambiar_clave_mueblista">Modificar contraseña</a></li>
-
-                    <li class="<?php echo $pagina == 'eliminar_cta_mueblista' ? 'active' : ''; ?>"><img class="a" src="imgIndex/quitar.png"><a href="?p=eliminar_cta_mueblista">Eliminar mi cuenta</a></li>
+                    <br>
                     <li>
                         <?php
                         if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true){

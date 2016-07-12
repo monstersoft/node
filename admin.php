@@ -25,21 +25,22 @@
                 ?>
                 <ul class="sidebar-nav">
                     <li class="fotoPerfil">
-                        <img width="100px;" class="img-circle" src="imgIndex/pato.jpg">
+                        <img width="100px;" class="img-circle" src="paginas/Perfil/admin-with-cogwheels.png">
                     </li>
                     <li>
                         <?php
                             if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true){
                                 $namex = $_SESSION['correo'];
-                                echo "<img class='a' src='imgIndex/correo.png'><a href='mi_perfil.php'><font color=#68D800>$namex</font></a>";
                             }
                             else echo "<a class='loquito' href='login_administrador.php'>INICIAR SESION</a>";
                         ?>
                     </li>
+                    <br>
                     <li class="<?php echo $pagina == 'agregar_sticker' ? 'active' : ''; ?>">
                     <img class="a" src="imgIndex/qr-codeblanco.png"><a href="?p=agregar_sticker">Generar Qr</a></li>
 
                     <li class="<?php echo $pagina == 'leer_qr' ? 'active' : ''; ?>"><img class="a" src="imgIndex/lupa.png"><a href="?p=leer_qr">Consultar Qr</a></li>
+                    <br>
 
                     <li class="<?php echo $pagina == 'agregar_administrador' ? 'active' : ''; ?>"><img class="a" src="imgIndex/agregar.png"><a href="?p=agregar_administrador">Agregar administrador</a></li>
 
@@ -52,7 +53,7 @@
                     <li class="<?php echo $pagina == 'agregar_madera' ? 'active' : ''; ?>"><img class="a" src="imgIndex/agregar.png"><a href="?p=agregar_madera">Agregar madera</a></li>
 
                     <li class="<?php echo $pagina == 'quitar_madera' ? 'active' : ''; ?>"><img class="a" src="imgIndex/quitar.png"><a a href="?p=quitar_madera">Quitar madera</a></li>
-                    
+                    <br>
                     <li>
                         <?php
                             if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true){

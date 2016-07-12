@@ -45,6 +45,7 @@ session_start();
                 <li class="<?php echo $pagina == 'agregar_mueble' ? 'active' : ''; ?>"><img class="a" src="imgIndex/misMuebles.png"><a href="?p=mis_muebles">Mis muebles</a></li>  
                 <li class="<?php echo $pagina == 'agregar_mueble' ? 'active' : ''; ?>"><img class="a" src="imgIndex/agregar.png"><a href="?p=agregar_mueble">Agregar mueble</a></li>  
                 <li class="<?php echo $pagina == 'ranking' ? 'active' : ''; ?>"><img class="a" src="imgIndex/ranking.png"><a href="?p=ranking">Ranking</a></li>
+                
                 <br>
                 <li>
                     <?php
