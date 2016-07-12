@@ -270,7 +270,7 @@ function setwebcam()
                 $id_sticker=$_POST['txtCodigo'];
                 
                 /*$ruta = "C:\wamp\www\node\paginas\Imagenes\..";*/
-                $ruta = 'C:\wamp\www\node\paginas\Imagenes\..';
+                $ruta = 'C:\xampp\htdocs\node\paginas\Imagenes\..';
                 opendir($ruta);
                 $destino = $ruta.$_FILES['foto']['name'];
                 copy($_FILES['foto']['tmp_name'],$destino);

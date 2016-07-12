@@ -20,7 +20,7 @@ session_start();
     <div id="wrapper">
         <div id="sidebar-wrapper">
             <?php   
-                $pagina = isset($_GET['p']) ? strtolower($_GET['p']) : 'mis_muebles';
+                $pagina = isset($_GET['p']) ? strtolower($_GET['p']) : 'agregar_mueble';
                 include "paginas/funciones.php";
             ?>
             <ul class="sidebar-nav">
