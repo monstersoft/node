@@ -34,7 +34,7 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
               <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#">home</a></li>
+                <li class=""><a href="index.php">home</a></li>
                 <li class=""><a href="registroUsuario.php">Registro</a></li>
                 <li class=""><a href="#">Nuestros clientes</a></li>
                 <li class=""><a href="loginUniversal.php">Login</a></li>
@@ -81,7 +81,6 @@
                 }
             }
        ?>
-       <input class="btn-lg btn-block" type="submit" value="Ver mas" name="consulta">
         </div>
           </div>
             </form>
@@ -113,8 +112,8 @@
               <div class="item-img">
                 <img src="imgIndex/desk.png">
               </div>
-                 <a class="link" href="infoms.php">
-                  <h3 class="pad-bt15">Información de ms</h3>
+                 <a class="link" href="#">
+                  <h3 class="pad-bt15">Información de muebles</h3>
                   <p>NodeQr permite revisar información de ms, el tipo de madera con el que están construidos y la calificación que les da cada usuario.</p>
                   </a>
             </div>

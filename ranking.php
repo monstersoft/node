@@ -1,4 +1,5 @@
 <?php
+    include 'paginas/funciones.php';
     session_start();
 ?>
 <!DOCTYPE html>
@@ -10,7 +11,7 @@
     <title>Node Qr</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300|Raleway:300,400,900,700italic,700,300,600' rel='stylesheet' type='text/css'>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="styleRanking.css">
+    <link rel="stylesheet" type="text/css" href="styleMueblesAsociados.css">
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="http://masonry.desandro.com/masonry.pkgd.js"></script>		
     <script src="http://imagesloaded.desandro.com/imagesloaded.pkgd.min.js"></script>
@@ -46,79 +47,10 @@
         <div class="wrapper">
         <div class="container">
           <div class="row">
-            <div class="contenedor">
-                <div class="elemento">
-                    <img src="imgMueblistas/m1.jpg" width="200px;" alt="">
-                    <a href="mueblesAsociados.php">Muebles asociados</a>
-                </div>
-                <div class="elemento">
-                    <img src="imgMueblistas/m2.jpg" width="200px;" alt="">
-                    <a href="mueblesAsociados.php">Muebles asociados</a>
-                </div>
-                <div class="elemento">
-                    <img src="imgMueblistas/m3.jpg" width="200px;" alt="">
-                    <a href="mueblesAsociados.php">Muebles asociados</a>
-                </div>
-                <div class="elemento">
-                    <img src="imgMueblistas/m4.jpg" width="200px;" alt="">
-                    <a href="mueblesAsociados.php">Muebles asociados</a>
-                </div>
-                <div class="elemento">
-                    <img src="imgMueblistas/m5.jpg" width="200px;" alt="">
-                    <a href="mueblesAsociados.php">Muebles asociados</a>
-                </div>
-                <div class="elemento">
-                    <img src="imgMueblistas/m6.jpg" width="200px;" alt="">
-                    <a href="mueblesAsociados.php">Muebles asociados</a>
-                </div>
-                <div class="elemento">
-                    <img src="imgMueblistas/m7.jpg" width="200px;" alt="">
-                    <a href="mueblesAsociados.php">Muebles asociados</a>
-                </div>
-                <div class="elemento">
-                    <img src="imgMueblistas/m8.jpg" width="200px;" alt="">
-                    <a href="mueblesAsociados.php">Muebles asociados</a>
-                </div>
-                <div class="elemento">
-                    <img src="imgMueblistas/m9.jpg" width="200px;" alt="">
-                    <a href="mueblesAsociados.php">Muebles asociados</a>
-                </div>
-                <div class="elemento">
-                    <img src="imgMueblistas/m10.jpg" width="200px;" alt="">
-                    <a href="mueblesAsociados.php">Muebles asociados</a>
-                </div>
-                <div class="elemento">
-                    <img src="imgMueblistas/m11.jpg" width="200px;" alt="">
-                    <a href="mueblesAsociados.php">Muebles asociados</a>
-                </div>
-                <div class="elemento">
-                    <img src="imgMueblistas/m12.jpg" width="200px;" alt="">
-                    <a href="mueblesAsociados.php">Muebles asociados</a>
-                </div>
-                <div class="elemento">
-                    <img src="imgMueblistas/m13.jpg" width="200px;" alt="">
-                    <a href="mueblesAsociados.php">Muebles asociados</a>
-                </div>
-                <div class="elemento">
-                    <img src="imgMueblistas/m14.jpg" width="200px;" alt="">
-                    <a href="mueblesAsociados.php">Muebles asociados</a>
-                </div>
-                <div class="elemento">
-                    <img src="imgMueblistas/m15.jpg" width="200px;" alt="">
-                    <a href="mueblesAsociados.php">Muebles asociados</a>
-                </div>
-                <div class="elemento">
-                    <img src="imgMueblistas/m16.jpg" width="200px;" alt="">
-                    <a href="mueblesAsociados.php">Muebles asociados</a>
-                </div>
-                <div class="elemento">
-                    <img src="imgMueblistas/m17.jpg" width="200px;" alt="">
-                    <a href="mueblesAsociados.php">Muebles asociados</a>
-                </div>
-                <div class="elemento">
-                    <img src="imgMueblistas/m18.jpg" width="200px;" alt="">
-                    <a href="mueblesAsociados.php">Muebles asociados</a>
-                </div>
+            <div class="contenedor">   
+                <?php
+                    ranking_mueblista();
+                ?>
             </div>
           </div>
         </div>
@@ -127,13 +59,13 @@
     </div>
     <!--/ HEADER-->
     <!---->
-    <!--<section id="feature" class="section-padding">
+    <section id="feature" class="section-padding">
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-sm-6 col-xs-12">
             <div class="wrap-item text-center">
               <div class="item-img">
-                <img src="imgMueblistas/toolbox.png">
+                <img src="imgIndex/toolbox.png">
               </div>
               <a class="link" href="ranking.php">
                   <h3 class="pad-bt15">Ranking de mueblistas</h3>
@@ -144,17 +76,17 @@
           <div class="col-md-6 col-sm-6 col-xs-12">
             <div class="wrap-item text-center">
               <div class="item-img">
-                <img src="imgMueblistas/desk.png">
+                <img src="imgIndex/desk.png">
               </div>
-                 <a class="link" href="infoms.php">
-                  <h3 class="pad-bt15">Información de ms</h3>
-                  <p>NodeQr permite revisar información de ms, el tipo de madera con el que están construidos y la calificación que les da cada usuario.</p>
+                 <a class="link" href="#">
+                  <h3 class="pad-bt15">Información de muebles</h3>
+                  <p>NodeQr permite revisar información de muebles, el tipo de madera con el que están construidos y la calificación que les da cada usuario.</p>
                   </a>
             </div>
           </div>
         </div>
       </div>
-    </section>-->
+    </section>
   </div>
     <script src="js/bootstrap.js"></script>
 	<script>

@@ -47,18 +47,16 @@
         <div class="wrapper">
         <div class="container">
           <div class="row">
-            <div class="contenedor">
-                <!--<div class="elemento">-->
-          <?php
-          if(isset($_POST['consulta'])){
-          $rut_mueblista=$_POST['rut_mueblista'];
-          if(($rut_mueblista == "")){  
-          }else{
-            $resultado = listar_muebles_mueblista($rut_mueblista);
-          }
-          }
-          ?>
-                <!--</div>-->
+            <div class="contenedor">   
+                  <?php
+                  if(isset($_POST['consulta'])){
+                  $rut_mueblista=$_POST['rut_mueblista'];
+                  if(($rut_mueblista == "")){  
+                  }else{
+                    $resultado = listar_muebles_mueblista($rut_mueblista);
+                  }
+                  }
+                  ?>   
             </div>
           </div>
         </div>
@@ -86,7 +84,7 @@
               <div class="item-img">
                 <img src="imgIndex/desk.png">
               </div>
-                 <a class="link" href="infoMuebles.php">
+                 <a class="link" href="#">
                   <h3 class="pad-bt15">Información de muebles</h3>
                   <p>NodeQr permite revisar información de muebles, el tipo de madera con el que están construidos y la calificación que les da cada usuario.</p>
                   </a>

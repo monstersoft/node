@@ -67,7 +67,9 @@ h1, h2, h3, h4, h5, h6{
 	width:100%;
 	margin:10px auto;
 }
-
+.ho {
+    padding: 10px;
+}
 .elemento {
 	width:220px;
 	background:#fff;

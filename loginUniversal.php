@@ -98,7 +98,7 @@
               <div class="item-img">
                 <img src="imgIndex/desk.png">
               </div>
-              <a class="link" href="infoMuebles.php">
+              <a class="link" href="#">
                   <h3 class="pad-bt15">Información de muebles</h3>
                   <p>NodeQr permite revisar información de muebles, el tipo de madera con el que están construidos y la calificación que les da cada usuario.</p>
               </a>
