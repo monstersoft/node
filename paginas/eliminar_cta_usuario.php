@@ -1,6 +1,5 @@
 <?php
-  require_once 'head.php';
-  include "funciones.php";  
+  require_once 'head.php'; 
 ?>
 
 

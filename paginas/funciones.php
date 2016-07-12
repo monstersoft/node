@@ -594,13 +594,19 @@ function mostrar_datos_usuario($correo){
   }
 function mostrar_foto_usuario($correo){
       $conn=conectarse();
-      $SQL="SELECT foto, correo FROM usuario WHERE correo='".$correo."'";
+      $SQL="SELECT foto FROM usuario WHERE correo='".$correo."'";
       $result=mysql_query($SQL);
       while($row =mysql_fetch_array($result)){
-      echo '
-                    <img  width="100px;" class="img-circle" src="paginas/Perfil/..'.$row[0].'" />
-                    <a href="mis_datos_usuario.php"><font color=#68D800>'.$row[1].'</font></a>
-                ';
+      echo '<img  width="100px;" class="img-circle" src="paginas/Perfil/..'.$row[0].'" />';
+      }
+        mysql_close();
+  }
+function mostrar_foto_mueblista($correo){
+      $conn=conectarse();
+      $SQL="SELECT foto FROM mueblista WHERE correo='".$correo."'";
+      $result=mysql_query($SQL);
+      while($row =mysql_fetch_array($result)){
+      echo '<img  width="100px;" class="img-circle" src="paginas/Perfil/..'.$row[0].'" />';
       }
         mysql_close();
   }

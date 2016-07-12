@@ -37,12 +37,15 @@ session_start();
                 <li class="fotoPerfil">
                    <?php mostrar_foto_usuario($namex) ?>
                 </li>
-                <li class="<?php echo $pagina == 'agregar_mueble' ? 'active' : ''; ?>"><img class="a" src="imgIndex/misMuebles.png"><a href="?p=mis_muebles">Mis muebles</a></li>  
-                <li class="<?php echo $pagina == 'agregar_mueble' ? 'active' : ''; ?>"><img class="a" src="imgIndex/agregar.png"><a href="?p=agregar_mueble">Agregar mueble</a></li>  
-                <li class="<?php echo $pagina == 'ranking' ? 'active' : ''; ?>"><img class="a" src="imgIndex/ranking.png"><a href="?p=ranking">Ranking</a></li>
+                <br>
                 <li class="<?php echo $pagina == 'mis_datos_usuario' ? 'active' : ''; ?>"><img class="a" src="imgIndex/userDatos.png"><a href="?p=mis_datos_usuario">Mis datos</a></li>
                 <li class="<?php echo $pagina == 'cambiar_clave_usuario' ? 'active' : ''; ?>"><img class="a" src="imgIndex/key.png"><a href="?p=cambiar_clave_usuario">Modificar contraseña</a></li>
                 <li class="<?php echo $pagina == 'eliminar_cta_usuario' ? 'active' : ''; ?>"><img class="a" src="imgIndex/quitar.png"><a href="?p=eliminar_cta_usuario">Eliminar mi cuenta</a></li>
+                <br>
+                <li class="<?php echo $pagina == 'agregar_mueble' ? 'active' : ''; ?>"><img class="a" src="imgIndex/misMuebles.png"><a href="?p=mis_muebles">Mis muebles</a></li>  
+                <li class="<?php echo $pagina == 'agregar_mueble' ? 'active' : ''; ?>"><img class="a" src="imgIndex/agregar.png"><a href="?p=agregar_mueble">Agregar mueble</a></li>  
+                <li class="<?php echo $pagina == 'ranking' ? 'active' : ''; ?>"><img class="a" src="imgIndex/ranking.png"><a href="?p=ranking">Ranking</a></li>
+                <br>
                 <li>
                     <?php
                     if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true){
