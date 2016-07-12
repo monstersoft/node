@@ -66,7 +66,8 @@
                         }
                         }
                     ?>
-                <input class="btn-lg btn-block" type="submit" value="Muebles asociados" name="consulta">
+                    <br>
+                <input class="btn btn-primary center-block" type="submit" value="Muebles asociados" name="consulta">
             </form>
               </div>
               <div class="col-xs-12 col-md-6">
