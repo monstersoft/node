@@ -336,14 +336,14 @@ function apellido_usuario($correo){
         $result=mysql_query($SQL);
         while($row=mysql_fetch_array($result)){  
           echo '
-            <ul class="list-group text-center">
-                 <li class="list-group-item"><img width="127" height="127" class="center-block img-circle" src="paginas/Perfil/..'.$row[2].'" /></li>
-                 <li class="list-group-item">'.$row[1].'</li>
-                 <li class="list-group-item">'.$row[3].'</li>
-                 <li class="list-group-item">'.$row[4].'</li>
-                 <li class="list-group-item">'.$row[5].'</li>
-                 <li class="list-group-item">'.$row[6].'</li>
-                 </ul>
+          <img width="127" height="127" class="center-block img-circle" src="paginas/Perfil/..'.$row[2].'" />
+                 <div class="infoMueblista">
+                    <h1 class="nombreMueblista">'.$row[1].'</h1>
+                    <p>Fono        : '.$row[3].'</p>
+                    <p>Email       : '.$row[4].'</p>
+                    <p>Direccion   : '.$row[5].'</p>
+                    <p>Calificacion: '.$row[6].'</p>
+                 </div>
              <input id="rut_mueblista" type="hidden" name="rut_mueblista" value="'.$row[0].'">';
         }
         mysql_close();
