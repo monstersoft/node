@@ -376,14 +376,13 @@ function listar_muebles_mueblista($rut_mueblista){
      $result=mysql_query($SQL);
         while($row=mysql_fetch_array($result)){
             echo '
-            <img width="200px;" class="img-responsive img-rounded" src="paginas/Imagenes/..'.$row[3].'" />
+            <div class="elemento">
+            <img width="220px;" alt="" src="paginas/Imagenes/..'.$row[3].'" />
+                  <p>Usuario: '.$row[0].' <p/>
+                  <p>Tipo:    '.$row[1].' </p>
+                  <p>Nota:    '.$row[2].' </p>
             </div>
-            <ul>
-                  <li>'.$row[0].' </li>
-                  <li>'.$row[1].' </li>
-                  <li>'.$row[2].' </li>
-            </ul>
-          </div>';
+          ';
         }
     mysql_close();
   }
