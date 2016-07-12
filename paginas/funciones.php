@@ -422,25 +422,21 @@ function listar_muebles_mueblista($rut_mueblista){
 ///////////////////////////////RANKING/////////////////////////////////////////
 function ranking_mueblista(){
     $conn=conectarse();
-    $SQL="SELECT nombre,telefono,direccion,foto FROM mueblista ORDER BY calificacion DESC";
+    $SQL="SELECT nombre,telefono,direccion,foto FROM mueblista ORDER BY calificacion DESC limit 10";
     $result=mysql_query($SQL);
     $ranking = 0;
     while($row=mysql_fetch_array($result)){
     $ranking = $ranking + 1;
-      echo'<meta charset="UTF-8">
-        <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="col-md-4 col-sm-4 col-xs-4">
-            <img class="img-responsive img-rounded" src="paginas/Perfil/..'.$row[3].'" />
-            </div>
-            <ul class="list-group col-md-8 col-sm-8 col-xs-8">
-                  <li class="list-group-item"><h4>'.$ranking.'. '.$row[0].'</h4></li>
-                  <li class="list-group-item">'.$row[1].' </li>
-                  <li class="list-group-item">'.$row[2].' </li>
-            </ul>
-          </div>';
+      echo'<div class="elemento">
+                <img width="220px;" alt="" src="paginas/Perfil/..'.$row[3].'"/>
+                  <p>'.$ranking.'. '.$row[0].'</p>
+                  <p>'.$row[1].' </p>
+                  <p>'.$row[2].' </p>
+            </div>';
     }
     mysql_close();
   }
+  
 function ranking(){
     $conn=conectarse();
     $SQL="SELECT nombre,telefono,direccion,foto FROM mueblista ORDER BY calificacion DESC";
@@ -448,16 +444,12 @@ function ranking(){
     $ranking = 0;
     while($row=mysql_fetch_array($result)){
     $ranking = $ranking + 1;
-      echo'<meta charset="UTF-8">
-        <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="col-md-4 col-sm-4 col-xs-4">
-            <img class="img-responsive img-rounded" src="paginas/Perfil/..'.$row[3].'" />
-            </div>
-            <ul class="list-group col-md-8 col-sm-8 col-xs-8">
-                  <li class="list-group-item"><h4>'.$ranking.'. '.$row[0].'</h4></li>
-                  <li class="list-group-item">'.$row[1].' </li>
-                  <li class="list-group-item">'.$row[2].' </li>
-            </ul>
+      echo'
+        <div class="elemento">
+            <img width="220px;" src="paginas/Perfil/..'.$row[3].'" />
+                  <p>'.$ranking.'. '.$row[0].'</p>
+                  <p>'.$row[1].'<p>
+                  <p>'.$row[2].'<p>
           </div>';
     }
     mysql_close();
