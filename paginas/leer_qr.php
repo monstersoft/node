@@ -1,6 +1,3 @@
-<?php
-    include "funciones.php"
-?>
 <!DOCTYPE html>
 <html>
     <head>
