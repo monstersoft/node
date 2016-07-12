@@ -549,7 +549,7 @@ function modificar_pass_usuario($correo,$contrasena){
 
       function mis_muebles_usuario($correo){
       $conn=conectarse();
-      $ruta='"C:\wamp\www\NodeQr\paginas\Imagenes';
+      $ruta='C:\wamp\www\node\paginas\Imagenes';
       $SQL="SELECT id_mueble,tipo,calificacion,foto FROM mueble WHERE correo='".$correo."'";
       $result=mysql_query($SQL);
       while($row =mysql_fetch_array($result)){
@@ -601,6 +601,17 @@ function mostrar_datos_usuario($correo){
       }
         mysql_close();
   }
-
+function mostrar_foto_usuario($correo){
+      $conn=conectarse();
+      $SQL="SELECT foto, correo FROM usuario WHERE correo='".$correo."'";
+      $result=mysql_query($SQL);
+      while($row =mysql_fetch_array($result)){
+      echo '
+                    <img  width="100px;" class="img-circle" src="paginas/Perfil/..'.$row[0].'" />
+                    <a href="mis_datos_usuario.php"><font color=#68D800>'.$row[1].'</font></a>
+                ';
+      }
+        mysql_close();
+  }
 
 ?>

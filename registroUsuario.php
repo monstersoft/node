@@ -131,8 +131,23 @@
     <script src="js/jquery.validate.js"></script>
     <script>
         $(document).ready(function() {
+            
+        jQuery.validator.addMethod("letras", function(value, element) {
+        return this.optional(element) || /^[a-záéóóúàèìòùäëïöüñ\s]+$/i.test(value);
+        }); 
+            
         $("#formAdmin").validate({
             rules:{
+                nombre:{
+                    required: true,
+                    rangelength: [3,30],
+                    letras:true,
+                },
+                apellido:{
+                    required: true,
+                    rangelength: [3,30],
+                    letras:true,
+                },
                 contrasena:{
                     required:true,
                     rangelength: [6,12]
@@ -144,6 +159,16 @@
                 },  
             },
             messages:{
+                nombre:{
+                    required: "Campo obligatorio",
+                    rangelength: "Mínimo 3 y máximo 30 caracteres",
+                    letras: "Ingrese solo letras"
+                },
+                apellido:{
+                    required: "Campo obligatorio",
+                    rangelength: "Mínimo 3 y máximo 30 caracteres",
+                    letras:"Ingrese solo letras"
+                },
                 contrasena:{
                     required:"Campo obligatorio",
                     rangelength:"Mínimo 6 y máximo 12 caracteres"

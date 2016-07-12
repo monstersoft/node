@@ -28,7 +28,7 @@
                     <li>
                         <?php
                         if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true){
-                        $namex = $_SESSION['rut'];
+                        $namex = $_SESSION['correo'];
                         echo "<img class='a' src='imgIndex/correo.png'><a href='mueblista.php'><font color=#68D800>$namex</font></a>";
                         }
                         else echo "<a class='loquito' href='index.php'>INICIAR SESION</a>";
@@ -50,7 +50,7 @@
                     <li>
                         <?php
                         if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true){
-                        $namex = $_SESSION['rut'];
+                        $namex = $_SESSION['correo'];
                         echo "<img class='a'' src='imgIndex/cerrar.png'><a href='close.php'>Cerrar sesión</a>";
                         }
                         ?>

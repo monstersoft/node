@@ -21,19 +21,21 @@ session_start();
         <div id="sidebar-wrapper">
             <?php   
                 $pagina = isset($_GET['p']) ? strtolower($_GET['p']) : 'mis_muebles';
+                include "paginas/funciones.php";
             ?>
             <ul class="sidebar-nav">
-                <li class="fotoPerfil">
-                    <img width="100px;" class="img-circle" src="imgIndex/pato.jpg">
-                </li>
+                
                 <li>
                     <?php
                     if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true){
                     $namex = $_SESSION['correo'];
-                    echo "<img class='a' src='imgIndex/correo.png'><a href='mueblista.php'><font color=#68D800>$namex</font></a>";
+                    
                     }
                     else echo "<a class='loquito' href='index.php'>INICIAR SESION</a>";
                 ?>
+                </li>
+                <li class="fotoPerfil">
+                   <?php mostrar_foto_usuario($namex) ?>
                 </li>
                 <li class="<?php echo $pagina == 'agregar_mueble' ? 'active' : ''; ?>"><img class="a" src="imgIndex/misMuebles.png"><a href="?p=mis_muebles">Mis muebles</a></li>  
                 <li class="<?php echo $pagina == 'agregar_mueble' ? 'active' : ''; ?>"><img class="a" src="imgIndex/agregar.png"><a href="?p=agregar_mueble">Agregar mueble</a></li>  

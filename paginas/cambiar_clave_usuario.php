@@ -1,6 +1,5 @@
 <?php
   require_once 'head.php';
-  include "funciones.php";  
 ?>
 
 <link rel="stylesheet" href="../estiloValidacion.css">

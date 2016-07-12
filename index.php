@@ -47,10 +47,10 @@
           <div class="row">
             <div class="banner-info text-center">
               <img src="imgIndex/qr-code(3).png">
-              <h2 class="bnr-sub-title">¿Quieres saber más de tu mueble ?</h2>
-              <p class="bnr-para">NodeQr permite indentificar información de los muebles del mercado, a través de un dispositivo móvil y el código indetificar Qr adherido al mueble.</p>
+              <h2 class="bnr-sub-title">¿Deseas obtener más información de un mueble?</h2>
+              <h3 class="bnr-para">NodeQr permite acceder a la información de este, a través del código QR adherido y en conjunto con un dispositivo móvil.</h3>
               <div class="brn-btn">
-                <a href="consultarQr.php" class="btn btn-download">Consultar código!</a>
+                <a href="consultarQr.php" class="btn btn-download">Presione aquí</a>
               </div>
             </div>
           </div>
@@ -70,7 +70,7 @@
               </div>
               <a class="link" href="ranking.php">
                   <h3 class="pad-bt15">Ranking de mueblistas</h3>
-                  <p>NodeQr permite revisar a los mejores mueblistas, con la calificación que les da cada uno de los usuarios.</p>
+                  <p>NodeQr permite conocer a los mejores mueblistas calificados por los usuarios.</p>
               </a>
             </div>
           </div>

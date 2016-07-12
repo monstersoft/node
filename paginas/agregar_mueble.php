@@ -1,5 +1,4 @@
 <?php
-    include "paginas/funciones.php";
     require_once 'head.php';
 ?>
        <head>
@@ -270,8 +269,8 @@ function setwebcam()
                 $correo=$_SESSION['correo'];
                 $id_sticker=$_POST['txtCodigo'];
                 
-                /*$ruta = "C:\wamp\www\NodeQr\paginas\Imagenes\..";*/
-                $ruta = "C:\xampp\htdocs\NodeQr\paginas\Imagenes\..";
+                /*$ruta = "C:\wamp\www\node\paginas\Imagenes\..";*/
+                $ruta = 'C:\wamp\www\node\paginas\Imagenes\..';
                 opendir($ruta);
                 $destino = $ruta.$_FILES['foto']['name'];
                 copy($_FILES['foto']['tmp_name'],$destino);

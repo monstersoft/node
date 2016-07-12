@@ -1,6 +1,5 @@
 <?php
-  require_once 'head.php';
-  include "funciones.php";  
+  require_once 'head.php'; 
 ?>
 <div class="col-md-8 col-sm-8 espacio principal">
     <form action="<?php echo $pagina == 'agregar_sticker_mueblista' ?>" method="post">
