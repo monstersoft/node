@@ -33,6 +33,7 @@
             <div class="collapse navbar-collapse" id="myNavbar">
               <ul class="nav navbar-nav navbar-right">
                 <li class="active"><a href="#">Home</a></li>
+                <h1>Hola mundo</h1>
                 <li class=""><a href="registroUsuario.php">Registro</a></li>
                 <li class=""><a href="#">Nuestros clientes</a></li>
                 <li class=""><a href="loginUniversal.php">Login</a></li>
